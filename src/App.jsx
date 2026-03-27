@@ -67,7 +67,7 @@ function App() {
       <div className="relative z-20">
         <CustomCursor />
         <ScrollProgress />
-        <Navbar />
+        <Navbar isLoading={showLoader} />
 
         <AnimatePresence mode="wait">
         {showLoader ? (

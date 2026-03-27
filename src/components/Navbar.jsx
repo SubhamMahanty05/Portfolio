@@ -32,7 +32,7 @@ const NAV_ITEMS = [
   { key: "contact", label: "Contact", href: "#contact", targetId: "contact", icon: Mail },
 ];
 
-function Navbar() {
+function Navbar({ isLoading = false }) {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
@@ -75,8 +75,8 @@ function Navbar() {
       className="pointer-events-none fixed left-1/2 top-5 z-[99999] isolate w-[min(calc(100vw-1.25rem),90rem)]"
       style={{ x: "-50%" }}
       initial={{ opacity: 0, y: -16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+      animate={{ opacity: isLoading ? 0 : 1, y: isLoading ? -16 : 0 }}
+      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: isLoading ? 0 : 0.2 }}
     >
       <div className="pointer-events-auto relative overflow-hidden rounded-full border border-cyan-300/32 bg-[rgba(2,8,20,0.84)] shadow-[0_16px_38px_rgba(15,23,42,0.52),0_0_0_1px_rgba(34,211,238,0.14),0_0_40px_rgba(34,211,238,0.18)] backdrop-blur-2xl">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.16),rgba(255,255,255,0.03)_34%,rgba(255,255,255,0)_100%)]" />
