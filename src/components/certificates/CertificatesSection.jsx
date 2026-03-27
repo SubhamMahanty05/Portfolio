@@ -6,6 +6,7 @@ import CertificateCard from "./CertificateCard";
 import CertificateFocusView from "./CertificateFocusView";
 
 const certificates = [
+  { title: "UI/UX Design", issuer: "Design Course", date: "2023", file: "/uiUX.pdf" },
   { title: "Operating Systems", issuer: "Systems Course", date: "2026", file: "/Os.pdf" },
   { title: "Python", issuer: "IIT Program", date: "2025", file: "/PythonIIT.pdf" },
   { title: "Hackathon", issuer: "Hackathon Event", date: "2025", file: "/Hackathon.pdf" },
@@ -13,6 +14,7 @@ const certificates = [
   { title: "Data Visualisation", issuer: "Visualization Program", date: "2024", file: "/Data_Visualisation.pdf" },
   { title: "Flutter", issuer: "App Development Course", date: "2024", file: "/Flutter.pdf" },
   { title: "Certificate", issuer: "Learning Platform", date: "2023", file: "/free.pdf" },
+  
 ];
 
 function CertificatesSection() {

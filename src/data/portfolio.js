@@ -643,8 +643,10 @@ export const contactProfile = {
   description:
     "Open to internships, collaborations, and ML product work.",
   email: "subhammahanty817@gmail.com",
+  phone: "+91 70088 41717",
   linkedin: "https://www.linkedin.com/in/mahanty-subham/",
   github: "https://github.com/SubhamMahanty05",
+  instagram: "",
   scheduleLink: "mailto:subhammahanty817@gmail.com?subject=Schedule%20a%20call",
   location: "India",
   availability: "Open for internships and collaborations",
