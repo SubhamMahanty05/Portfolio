@@ -1,0 +1,39 @@
+{
+  "name": "PortFolioSubham",
+  "version": "1.0.0",
+  "description": "Futuristic data science and machine learning portfolio.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "vite",
+    "tailwind",
+    "threejs",
+    "machine-learning"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.14.2",
+    "lucide-react": "^1.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "recharts": "^3.8.0",
+    "three": "^0.183.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.2"
+  }
+}
